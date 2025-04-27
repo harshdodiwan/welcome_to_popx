@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PopX App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen active">
+    <h1>Welcome to PopX</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+    <button class="btn primary" onclick="showScreen('create-account-screen')">Create Account</button>
+    <button class="btn secondary" onclick="showScreen('login-screen')">Already Registered? Login</button>
+  </div>
+
+  <!-- Login Screen -->
+  <div id="login-screen" class="screen">
+    <h1>Signin to your PopX account</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+    <input type="email" placeholder="Enter email address">
+    <input type="password" placeholder="Enter password">
+    <button class="btn primary" onclick="showScreen('account-settings')">Login</button>
+  </div>
+
+  <!-- Create Account Screen -->
+  <div id="create-account-screen" class="screen">
+    <h1>Create your PopX account</h1>
+    <input type="text" placeholder="Full Name*">
+    <input type="text" placeholder="Phone Number*">
+    <input type="email" placeholder="Email Address*">
+    <input type="password" placeholder="Password*">
+    <input type="text" placeholder="Company Name">
+    <div class="radio-group">
+      <p>Are you an Agency?*</p>
+      <label><input type="radio" name="agency" checked> Yes</label>
+      <label><input type="radio" name="agency"> No</label>
+    </div>
+    <button class="btn primary" onclick="showScreen('account-settings')">Create Account</button>
+  </div>
+
+  <!-- Account Settings Screen -->
+  <div id="account-settings" class="screen">
+    <h2>Account Settings</h2>
+    <div class="profile">
+      <img src="https://via.placeholder.com/80" alt="Profile Picture">
+      <div>
+        <h3>Marry Doe</h3>
+        <p>Marry@gmail.com</p>
+      </div>
+    </div>
+    <p class="description">
+      Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
